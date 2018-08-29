@@ -1,7 +1,7 @@
 # encoding=utf8 
 from __future__ import absolute_import
 import subprocess
-
+import sys
 from setuptools import setup
 reload(sys)
 sys.setdefaultencoding('utf-8')
