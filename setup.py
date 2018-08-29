@@ -3,7 +3,8 @@ from __future__ import absolute_import
 import subprocess
 
 from setuptools import setup
-
+reload(sys)
+sys.setdefaultencoding('utf-8')
 try:
     pandoc = subprocess.Popen(['pandoc', 'README.md', '--to', 'rst'],
                               stdout=subprocess.PIPE)
